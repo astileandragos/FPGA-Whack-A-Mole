@@ -18,7 +18,7 @@ The game tracks missed targets and incorrect inputs. Upon reaching 3 mistakes, t
 - **Tools:** Xilinx Vivado
 
 ## Key Features & Architecture
-- **Game Logic (FSM):** The core gameplay loop, state transitions, and mistake tracking are managed by a robust Finite State Machine.
+- **Game Logic (FSM):** The core gameplay loop, state transitions, and mistake tracking are managed by a Finite State Machine.
 - **Randomization (LFSR):** Uses a Linear-Feedback Shift Register to unpredictably generate the next LED target.
 - **Input Handling:** Implements hardware debouncing logic for switches/buttons to ensure reliable and glitch-free user inputs.
 
