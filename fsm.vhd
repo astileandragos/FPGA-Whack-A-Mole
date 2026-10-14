@@ -121,16 +121,13 @@ begin
         if current_state = reg_mistake then mistakes <= mistakes + 1; led_reg(i) <= '0'; end if;
 
         if current_state = count then
-            if u = 9 then
-                u <= 0;
-                if z = 9 then
-                    z <= 0;
-                    if s = 9 then
-                        s <= 0;
-                        if m = 9 then m <= 0; else m <= m + 1; end if;
-                    else s <= s + 1; end if;
-                else z <= z + 1; end if;
-            else u <= u + 1; end if;
+            if z = 9 then
+                z <= 0;
+                if s = 9 then
+                    s <= 0;
+                    if m = 9 then m <= 0; else m <= m + 1; end if;
+                else s <= s + 1; end if;
+            else z <= z + 1; end if;
         end if;
 
         if current_state = blink then
